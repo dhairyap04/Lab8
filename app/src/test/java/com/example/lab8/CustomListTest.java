@@ -46,12 +46,12 @@ public class CustomListTest {
 
         cityList.add(city);
 
-        assertTrue(CustomList.hasCity(city));
+        assertTrue(cityList.hasCity(city));
 
-        assertFalse(CustomList.hasCity(city2));
+        assertFalse(cityList.hasCity(city2));
 
         cityList.add(city2);
-        assertTrue(CustomList.hasCity(city2));
+        assertTrue(cityList.hasCity(city2));
     }
 
 }
