@@ -67,7 +67,7 @@ public class CustomListTest {
         list.delete(city1);
         assertEquals(1, list.getCount());
         list.addCity(city3);
-        list.add(city1);
+        list.addCity(city1);
         assertEquals(3, list.getCount());
 
     }
