@@ -49,11 +49,6 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
-    /**
-     * this adds a city object to the list
-     *the second phase, you can add the
-     city * @param city
-     */
     public void addCity(City city){
         cities.add(city);
     }
@@ -62,8 +57,9 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
-    public void delete(City city){
-        return;
+    public void delete(City city) {
+        if (cities.contains(city)) {
+            cities.remove(city);
+        }
     }
-
 }
